@@ -1,0 +1,44 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ---------- Node ----------
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# ---------- 环境变量（含 API 密钥，禁止提交）----------
+.env
+.env.local
+.env.*.local
+
+# ---------- 运行时产物 ----------
+# 研究过程中落盘的笔记 / 索引
+langgraph/notes/
+langgraph/src/notes/
+
+# ---------- 本地知识库 ----------
+# 私有文档不进版本库（保留目录占位）
+langgraph/data/docs/*
+!langgraph/data/docs/.gitkeep
+# 生成的向量索引
+langgraph/data/chroma/
+*.db
+*.sqlite
+
+# ---------- 编辑器 / 操作系统 ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
